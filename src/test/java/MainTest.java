@@ -1,5 +1,5 @@
 import org.example.mobile.Contact;
-import org.example.mobile.MobilePhone;
+import org.example.mobile.mobilePhone;
 
 import org.example.models.Grocery;
 import org.junit.jupiter.api.BeforeEach;
@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @ExtendWith(ResultAnalyzer.class)
 public class MainTest {
 
-    MobilePhone mobilePhone;
+    org.example.mobile.mobilePhone mobilePhone;
 
     @BeforeEach
     void setUp() {
@@ -24,7 +24,7 @@ public class MainTest {
         contacts.add(new Contact("John Doe", "123123123"));
         contacts.add(new Contact("Jane Doe", "124124124"));
         contacts.add(new Contact("Baby Doe", "125125125"));
-        mobilePhone = new MobilePhone("11111111", contacts);
+        mobilePhone = new mobilePhone("11111111", contacts);
     }
 
     @DisplayName("addItems methodu doğru çalışıyor mu mu?")

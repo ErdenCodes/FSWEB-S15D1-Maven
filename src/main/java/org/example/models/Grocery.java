@@ -38,6 +38,9 @@ do {
 scanner.close();
 
     }
+     public static  boolean checkItemsInList(String item){
+         return groceryList.contains(item);
+     }
 
      public static void removeItems(String itemsToRemove) {
         String[] splitItems= itemsToRemove.split(",");
@@ -49,6 +52,7 @@ scanner.close();
                 groceryList.remove(item);
             }
         }
+        sortItems();
      }
 
      public static void addItems(String itemsToAdd) {
@@ -62,11 +66,10 @@ scanner.close();
                 }
 
             }
+            sortItems();
          }
 
-         private static  boolean checkItemsInList(String item){
-        return groceryList.contains(item);
-         }
+
 
          public  static void printSorted(){
         sortItems();
